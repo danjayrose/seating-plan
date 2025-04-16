@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+  <title>Seating Plan</title>
+  <meta name="theme-color" content="#f4bde9" />
   <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
   <style>
         html, body {
         position: relative;
         height: 100%;
+        background: #f4bde9;
     }
     body {
         background: #eee;
@@ -44,20 +47,14 @@
   background-color:#fff;
 }
 
-.color-1{
-  background-color:#009688;
+.slide {
+  background: #f4bde9;
 }
-.color-2{
-  background-color:#4CAF50;
-}
-.color-3{
-  background-color:#FFEB3B;
-}
-.color-4{
-  background-color:#FF5722;
-}
-.color-5{
-  background-color:#607D8B;
+
+.swiper-img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
 }
   </style>
 </head>
@@ -65,16 +62,21 @@
   <!-- Slider main container -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide color-1">Slide 1</div>
-        <div class="swiper-slide color-2">Slide 2</div>
-        <div class="swiper-slide color-3">Slide 3</div>
-        <div class="swiper-slide color-4">Slide 4</div>
-        <div class="swiper-slide color-5">Slide 5</div>
-        <div class="swiper-slide color-1">Slide 6</div>
-        <div class="swiper-slide color-2">Slide 7</div>
-        <div class="swiper-slide color-3">Slide 8</div>
-        <div class="swiper-slide color-4">Slide 9</div>
-        <div class="swiper-slide color-5">Slide 10</div>
+        <div class="swiper-slide slide">
+          <img class="swiper-img" src="./1.jpg" alt="We saved you a seat" />
+        </div>
+        <div class="swiper-slide slide">
+          <img class="swiper-img" src="./2.jpg" alt="Row 1" />
+        </div>
+        <div class="swiper-slide slide">
+          <img class="swiper-img" src="./3.jpg" alt="Row 2" />
+        </div>
+        <div class="swiper-slide slide">
+          <img class="swiper-img" src="./4.jpg" alt="Row 3" />
+        </div>
+        <div class="swiper-slide slide">
+          <img class="swiper-img" src="./5.jpg" alt="Row 4" />
+        </div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
